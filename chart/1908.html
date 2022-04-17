@@ -1,0 +1,75 @@
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    zoomEnabled: true,
+    zoomType: "xy",	
+    title: {
+		text: "Porfolio of - HOCT36M19G"
+	},
+	axisX: {
+		valueFormatString: "MMM YYYY",
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	axisY2: {
+		title: "Strategy"
+
+	},
+	axisY:{
+    	includeZero: false
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor: "pointer",
+		verticalAlign: "top",
+		horizontalAlign: "center",
+		dockInsidePlotArea: true,
+		itemclick: toogleDataSeries
+	},                     
+	data: [{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "SMA50",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+]
+	},
+{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "EMA20",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+]
+	}]
+ 	
+});
+	chart.options.axisY.minimum = null;
+	chart.options.axisY.maximum = null;
+	chart.render();
+
+function toogleDataSeries(e){
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	} else{
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+}
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 100%; width: 100%; position: absolute">
+  </div>
+</body>
+</html>

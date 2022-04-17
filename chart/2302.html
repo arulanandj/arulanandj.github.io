@@ -1,0 +1,229 @@
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    zoomEnabled: true,
+    zoomType: "xy",	
+    title: {
+		text: "Porfolio of - VF1RD"
+	},
+	axisX: {
+		valueFormatString: "MMM YYYY",
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	axisY2: {
+		title: "Strategy"
+
+	},
+	axisY:{
+    	includeZero: false
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor: "pointer",
+		verticalAlign: "top",
+		horizontalAlign: "center",
+		dockInsidePlotArea: true,
+		itemclick: toogleDataSeries
+	},                     
+	data: [{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "SMA50",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+		 { x : new Date(2022,2,8), y :      81.70},
+		 { x : new Date(2022,2,8), y :      81.70},
+		 { x : new Date(2022,2,9), y :      81.70},
+		 { x : new Date(2022,2,9), y :      81.70},
+		 { x : new Date(2022,2,10), y :      81.70},
+		 { x : new Date(2022,2,10), y :      81.70},
+		 { x : new Date(2022,2,11), y :      81.70},
+		 { x : new Date(2022,2,11), y :      81.70},
+		 { x : new Date(2022,2,14), y :      81.70},
+		 { x : new Date(2022,2,14), y :      81.70},
+		 { x : new Date(2022,2,15), y :      81.70},
+		 { x : new Date(2022,2,15), y :      81.70},
+		 { x : new Date(2022,2,16), y :      81.70},
+		 { x : new Date(2022,2,16), y :      81.70},
+		 { x : new Date(2022,2,17), y :      81.70},
+		 { x : new Date(2022,2,17), y :      81.70},
+		 { x : new Date(2022,2,18), y :      81.70},
+		 { x : new Date(2022,2,18), y :      81.70},
+		 { x : new Date(2022,2,21), y :      81.70},
+		 { x : new Date(2022,2,21), y :      81.70},
+		 { x : new Date(2022,2,22), y :      81.70},
+		 { x : new Date(2022,2,22), y :      81.70},
+		 { x : new Date(2022,2,23), y :      81.70},
+		 { x : new Date(2022,2,23), y :      81.70},
+		 { x : new Date(2022,2,24), y :      81.70},
+		 { x : new Date(2022,2,24), y :      81.70},
+		 { x : new Date(2022,2,25), y :      81.70},
+		 { x : new Date(2022,2,25), y :      81.70},
+		 { x : new Date(2022,2,28), y :      81.70},
+		 { x : new Date(2022,2,28), y :      81.70},
+		 { x : new Date(2022,3,2), y :      81.70},
+		 { x : new Date(2022,3,2), y :      81.70},
+		 { x : new Date(2022,3,3), y :      81.70},
+		 { x : new Date(2022,3,3), y :      81.70},
+		 { x : new Date(2022,3,4), y :      81.70},
+		 { x : new Date(2022,3,4), y :      81.70},
+		 { x : new Date(2022,3,7), y :      81.70},
+		 { x : new Date(2022,3,7), y :      81.70},
+		 { x : new Date(2022,3,8), y :      81.70},
+		 { x : new Date(2022,3,8), y :      81.70},
+		 { x : new Date(2022,3,9), y :      81.70},
+		 { x : new Date(2022,3,9), y :      81.70},
+		 { x : new Date(2022,3,10), y :      81.70},
+		 { x : new Date(2022,3,10), y :      81.70},
+		 { x : new Date(2022,3,11), y :      81.70},
+		 { x : new Date(2022,3,11), y :      81.70},
+		 { x : new Date(2022,3,14), y :      81.70},
+		 { x : new Date(2022,3,14), y :      81.70},
+		 { x : new Date(2022,3,15), y :      81.70},
+		 { x : new Date(2022,3,15), y :      81.70},
+		 { x : new Date(2022,3,16), y :      81.70},
+		 { x : new Date(2022,3,16), y :      81.70},
+		 { x : new Date(2022,3,17), y :      81.70},
+		 { x : new Date(2022,3,17), y :      81.70},
+		 { x : new Date(2022,3,21), y :      81.70},
+		 { x : new Date(2022,3,21), y :      81.70},
+		 { x : new Date(2022,3,22), y :      81.70},
+		 { x : new Date(2022,3,22), y :      81.70},
+		 { x : new Date(2022,3,23), y :      81.70},
+		 { x : new Date(2022,3,23), y :      81.70},
+		 { x : new Date(2022,3,24), y :      81.70},
+		 { x : new Date(2022,3,24), y :      81.70},
+		 { x : new Date(2022,3,25), y :      81.70},
+		 { x : new Date(2022,3,25), y :      81.70},
+		 { x : new Date(2022,3,28), y :      81.70},
+		 { x : new Date(2022,3,28), y :      81.70},
+		 { x : new Date(2022,3,29), y :      81.83},
+		 { x : new Date(2022,3,30), y :      82.04},
+		 { x : new Date(2022,3,31), y :      82.35},
+		 { x : new Date(2022,4,1), y :      82.75},
+		 { x : new Date(2022,4,4), y :      83.05},
+		 { x : new Date(2022,4,5), y :      83.27},
+		 { x : new Date(2022,4,6), y :      83.43},
+		 { x : new Date(2022,4,7), y :      83.68},
+		 { x : new Date(2022,4,8), y :      83.85},
+		 { x : new Date(2022,4,11), y :      83.95},
+		 { x : new Date(2022,4,12), y :      84.08},
+		 { x : new Date(2022,4,13), y :      84.17}]
+	},
+{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "EMA20",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+		 { x : new Date(2022,2,8), y :      81.70},
+		 { x : new Date(2022,2,8), y :      81.70},
+		 { x : new Date(2022,2,9), y :      81.70},
+		 { x : new Date(2022,2,9), y :      81.70},
+		 { x : new Date(2022,2,10), y :      81.70},
+		 { x : new Date(2022,2,10), y :      81.70},
+		 { x : new Date(2022,2,11), y :      81.70},
+		 { x : new Date(2022,2,11), y :      81.70},
+		 { x : new Date(2022,2,14), y :      81.70},
+		 { x : new Date(2022,2,14), y :      81.70},
+		 { x : new Date(2022,2,15), y :      81.70},
+		 { x : new Date(2022,2,15), y :      81.70},
+		 { x : new Date(2022,2,16), y :      81.70},
+		 { x : new Date(2022,2,16), y :      81.70},
+		 { x : new Date(2022,2,17), y :      81.70},
+		 { x : new Date(2022,2,17), y :      81.70},
+		 { x : new Date(2022,2,18), y :      81.70},
+		 { x : new Date(2022,2,18), y :      81.70},
+		 { x : new Date(2022,2,21), y :      81.70},
+		 { x : new Date(2022,2,21), y :      81.70},
+		 { x : new Date(2022,2,22), y :      81.70},
+		 { x : new Date(2022,2,22), y :      81.70},
+		 { x : new Date(2022,2,23), y :      81.70},
+		 { x : new Date(2022,2,23), y :      81.70},
+		 { x : new Date(2022,2,24), y :      81.70},
+		 { x : new Date(2022,2,24), y :      81.70},
+		 { x : new Date(2022,2,25), y :      81.70},
+		 { x : new Date(2022,2,25), y :      81.70},
+		 { x : new Date(2022,2,28), y :      81.70},
+		 { x : new Date(2022,2,28), y :      81.70},
+		 { x : new Date(2022,3,2), y :      81.70},
+		 { x : new Date(2022,3,2), y :      81.70},
+		 { x : new Date(2022,3,3), y :      81.70},
+		 { x : new Date(2022,3,3), y :      81.70},
+		 { x : new Date(2022,3,4), y :      81.70},
+		 { x : new Date(2022,3,4), y :      81.70},
+		 { x : new Date(2022,3,7), y :      81.70},
+		 { x : new Date(2022,3,7), y :      81.70},
+		 { x : new Date(2022,3,8), y :      81.70},
+		 { x : new Date(2022,3,8), y :      81.70},
+		 { x : new Date(2022,3,9), y :      81.70},
+		 { x : new Date(2022,3,9), y :      81.70},
+		 { x : new Date(2022,3,10), y :      81.70},
+		 { x : new Date(2022,3,10), y :      81.70},
+		 { x : new Date(2022,3,11), y :      81.70},
+		 { x : new Date(2022,3,11), y :      81.70},
+		 { x : new Date(2022,3,14), y :      81.70},
+		 { x : new Date(2022,3,14), y :      81.70},
+		 { x : new Date(2022,3,15), y :      81.70},
+		 { x : new Date(2022,3,15), y :      81.70},
+		 { x : new Date(2022,3,16), y :      81.70},
+		 { x : new Date(2022,3,16), y :      81.70},
+		 { x : new Date(2022,3,17), y :      81.70},
+		 { x : new Date(2022,3,17), y :      81.70},
+		 { x : new Date(2022,3,21), y :      81.70},
+		 { x : new Date(2022,3,21), y :      81.70},
+		 { x : new Date(2022,3,22), y :      81.70},
+		 { x : new Date(2022,3,22), y :      81.70},
+		 { x : new Date(2022,3,23), y :      81.70},
+		 { x : new Date(2022,3,23), y :      81.70},
+		 { x : new Date(2022,3,24), y :      81.70},
+		 { x : new Date(2022,3,24), y :      81.70},
+		 { x : new Date(2022,3,25), y :      81.70},
+		 { x : new Date(2022,3,25), y :      81.70},
+		 { x : new Date(2022,3,28), y :      81.70},
+		 { x : new Date(2022,3,28), y :      81.70},
+		 { x : new Date(2022,3,29), y :      82.30},
+		 { x : new Date(2022,3,30), y :      83.26},
+		 { x : new Date(2022,3,31), y :      84.57},
+		 { x : new Date(2022,4,1), y :      86.22},
+		 { x : new Date(2022,4,4), y :      87.23},
+		 { x : new Date(2022,4,5), y :      87.73},
+		 { x : new Date(2022,4,6), y :      87.93},
+		 { x : new Date(2022,4,7), y :      88.53},
+		 { x : new Date(2022,4,8), y :      88.67},
+		 { x : new Date(2022,4,11), y :      88.46},
+		 { x : new Date(2022,4,12), y :      88.42},
+		 { x : new Date(2022,4,13), y :      88.22}]
+	}]
+ 	
+});
+	chart.options.axisY.minimum = null;
+	chart.options.axisY.maximum = null;
+	chart.render();
+
+function toogleDataSeries(e){
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	} else{
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+}
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 100%; width: 100%; position: absolute">
+  </div>
+</body>
+</html>

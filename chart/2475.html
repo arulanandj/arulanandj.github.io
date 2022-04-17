@@ -1,0 +1,171 @@
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    zoomEnabled: true,
+    zoomType: "xy",	
+    title: {
+		text: "Porfolio of - ICICIB22"
+	},
+	axisX: {
+		valueFormatString: "MMM YYYY",
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	axisY2: {
+		title: "Strategy"
+
+	},
+	axisY:{
+    	includeZero: false
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor: "pointer",
+		verticalAlign: "top",
+		horizontalAlign: "center",
+		dockInsidePlotArea: true,
+		itemclick: toogleDataSeries
+	},                     
+	data: [{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "SMA50",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+		 { x : new Date(2022,2,2), y :      67.92},
+		 { x : new Date(2022,2,3), y :      68.45},
+		 { x : new Date(2022,2,4), y :      68.97},
+		 { x : new Date(2022,2,7), y :      69.48},
+		 { x : new Date(2022,2,8), y :      70.00},
+		 { x : new Date(2022,2,9), y :      70.46},
+		 { x : new Date(2022,2,10), y :      70.91},
+		 { x : new Date(2022,2,11), y :      71.36},
+		 { x : new Date(2022,2,14), y :      71.76},
+		 { x : new Date(2022,2,15), y :      72.03},
+		 { x : new Date(2022,2,16), y :      72.28},
+		 { x : new Date(2022,2,17), y :      72.46},
+		 { x : new Date(2022,2,18), y :      72.70},
+		 { x : new Date(2022,2,21), y :      72.83},
+		 { x : new Date(2022,2,22), y :      72.91},
+		 { x : new Date(2022,2,23), y :      73.04},
+		 { x : new Date(2022,2,24), y :      73.08},
+		 { x : new Date(2022,2,25), y :      73.29},
+		 { x : new Date(2022,2,28), y :      73.50},
+		 { x : new Date(2022,3,2), y :      73.69},
+		 { x : new Date(2022,3,3), y :      73.86},
+		 { x : new Date(2022,3,4), y :      73.92},
+		 { x : new Date(2022,3,7), y :      73.89},
+		 { x : new Date(2022,3,8), y :      74.04},
+		 { x : new Date(2022,3,9), y :      74.17},
+		 { x : new Date(2022,3,10), y :      74.26},
+		 { x : new Date(2022,3,11), y :      74.35},
+		 { x : new Date(2022,3,14), y :      74.36},
+		 { x : new Date(2022,3,15), y :      74.09},
+		 { x : new Date(2022,3,16), y :      73.90},
+		 { x : new Date(2022,3,17), y :      73.74},
+		 { x : new Date(2022,3,21), y :      73.59},
+		 { x : new Date(2022,3,22), y :      73.42},
+		 { x : new Date(2022,3,23), y :      73.33},
+		 { x : new Date(2022,3,24), y :      73.20},
+		 { x : new Date(2022,3,25), y :      73.07},
+		 { x : new Date(2022,3,28), y :      72.91},
+		 { x : new Date(2022,3,29), y :      72.78},
+		 { x : new Date(2022,3,30), y :      72.68},
+		 { x : new Date(2022,3,31), y :      72.56},
+		 { x : new Date(2022,4,1), y :      72.37},
+		 { x : new Date(2022,4,4), y :      72.21},
+		 { x : new Date(2022,4,5), y :      72.13},
+		 { x : new Date(2022,4,6), y :      72.10},
+		 { x : new Date(2022,4,7), y :      72.18},
+		 { x : new Date(2022,4,8), y :      72.16},
+		 { x : new Date(2022,4,11), y :      72.19},
+		 { x : new Date(2022,4,12), y :      72.16},
+		 { x : new Date(2022,4,13), y :      72.13}]
+	},
+{
+	 type : "line",
+	 axisType : "secondary", 
+	 name : "EMA20",
+	 showInLegend : true, 
+	 markerSize : 0, 
+	 dataPoints : [
+		 { x : new Date(2022,2,2), y :      77.99},
+		 { x : new Date(2022,2,3), y :      78.38},
+		 { x : new Date(2022,2,4), y :      78.80},
+		 { x : new Date(2022,2,7), y :      79.00},
+		 { x : new Date(2022,2,8), y :      79.09},
+		 { x : new Date(2022,2,9), y :      78.99},
+		 { x : new Date(2022,2,10), y :      78.85},
+		 { x : new Date(2022,2,11), y :      78.78},
+		 { x : new Date(2022,2,14), y :      78.44},
+		 { x : new Date(2022,2,15), y :      77.57},
+		 { x : new Date(2022,2,16), y :      76.84},
+		 { x : new Date(2022,2,17), y :      76.27},
+		 { x : new Date(2022,2,18), y :      75.80},
+		 { x : new Date(2022,2,21), y :      75.05},
+		 { x : new Date(2022,2,22), y :      74.30},
+		 { x : new Date(2022,2,23), y :      73.89},
+		 { x : new Date(2022,2,24), y :      73.00},
+		 { x : new Date(2022,2,25), y :      72.63},
+		 { x : new Date(2022,2,28), y :      72.35},
+		 { x : new Date(2022,3,2), y :      72.02},
+		 { x : new Date(2022,3,3), y :      71.71},
+		 { x : new Date(2022,3,4), y :      71.16},
+		 { x : new Date(2022,3,7), y :      70.18},
+		 { x : new Date(2022,3,8), y :      69.96},
+		 { x : new Date(2022,3,9), y :      69.60},
+		 { x : new Date(2022,3,10), y :      69.26},
+		 { x : new Date(2022,3,11), y :      69.06},
+		 { x : new Date(2022,3,14), y :      68.86},
+		 { x : new Date(2022,3,15), y :      68.62},
+		 { x : new Date(2022,3,16), y :      68.51},
+		 { x : new Date(2022,3,17), y :      68.59},
+		 { x : new Date(2022,3,21), y :      68.84},
+		 { x : new Date(2022,3,22), y :      68.92},
+		 { x : new Date(2022,3,23), y :      69.22},
+		 { x : new Date(2022,3,24), y :      69.35},
+		 { x : new Date(2022,3,25), y :      69.34},
+		 { x : new Date(2022,3,28), y :      69.12},
+		 { x : new Date(2022,3,29), y :      68.97},
+		 { x : new Date(2022,3,30), y :      69.00},
+		 { x : new Date(2022,3,31), y :      68.95},
+		 { x : new Date(2022,4,1), y :      69.01},
+		 { x : new Date(2022,4,4), y :      69.39},
+		 { x : new Date(2022,4,5), y :      70.21},
+		 { x : new Date(2022,4,6), y :      71.28},
+		 { x : new Date(2022,4,7), y :      72.02},
+		 { x : new Date(2022,4,8), y :      72.57},
+		 { x : new Date(2022,4,11), y :      73.24},
+		 { x : new Date(2022,4,12), y :      73.82},
+		 { x : new Date(2022,4,13), y :      74.24}]
+	}]
+ 	
+});
+	chart.options.axisY.minimum = null;
+	chart.options.axisY.maximum = null;
+	chart.render();
+
+function toogleDataSeries(e){
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	} else{
+		e.dataSeries.visible = true;
+	}
+	chart.render();
+}
+}
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 100%; width: 100%; position: absolute">
+  </div>
+</body>
+</html>
